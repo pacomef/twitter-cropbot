@@ -1,4 +1,6 @@
-consumer_key = "***REMOVED_TWITTER_CONSUMER_KEY***"
-consumer_secret = "***REMOVED_TWITTER_CONSUMER_SECRET***"
-access_token = "***REMOVED_TWITTER_ACCESS_TOKEN***"
-access_token_secret = "***REMOVED_TWITTER_ACCESS_TOKEN_SECRET***"
+import os
+
+consumer_key = os.environ.get("TWITTER_CONSUMER_KEY")
+consumer_secret = os.environ.get("TWITTER_CONSUMER_SECRET")
+access_token = os.environ.get("TWITTER_ACCESS_TOKEN")
+access_token_secret = os.environ.get("TWITTER_ACCESS_TOKEN_SECRET")
